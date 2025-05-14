@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Kaamelott</title>
+    <link rel="stylesheet" href="feuilledestylekaamelot1.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Kaamelott : Qui a dit ça ?</h1>
+
+        <div id="choix-mode">
+            <h2>Choisissez votre mode de jeu</h2>
+            <button onclick="demarrerJeu(false)">Mode Normal</button>
+            <button onclick="demarrerJeu(true)">Mode Chrono</button>
+        </div>
+        
+        <!-- Choix du niveau -->
+        <div id="choix-difficulte" style="display: none;">
+            <h2>Choisissez votre niveau</h2>
+            <button onclick="choisirNiveau('facile')">Facile</button>
+            <button onclick="choisirNiveau('moyen')">Moyen</button>
+            <button onclick="choisirNiveau('difficile')">Difficile</button>
+        </div>
+        
+        <!-- Zone du quiz (cachée au début) -->
+        <div id="quiz" style="display: none;">
+            <p id="quote"></p>
+            <div id="choices"></div>
+            <p id="score">Score : <span id="points">0</span></p>
+        </div>
+
+        <div id="timer-container">
+            <div id="timer-bar"></div>
+        </div>
+
+
+    </div>
+
+    <script src="javascriptkaamelot1.js"></script>
+</body>
+</html>
+
