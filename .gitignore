@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+
+# Mac system files
+.DS_Store
+
+# Log files
+*.log
+
+# IDE config
+.vscode/
+.idea/
+
+# System backup files
+*.bak
+*.tmp
+
+# Output files
+/dist/
+/build/
